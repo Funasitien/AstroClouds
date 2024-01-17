@@ -1,8 +1,8 @@
 ---
-const { title, description, button_text = "En savoir plus", button_url = "#" } = Astro.props;
+const { title, description, button_text = "En savoir plus", button_url = "#", col = "col-span-1", row = "row-span-1" } = Astro.props;
 ---
 
-<div class="card w-96 bg-base-100 shadow-xl">
+<div class:list={['card w-96 bg-base-300 shadow-xl', col, row]}>
   <div class="card-body">
     <h2 class="card-title">{ title }</h2>
     <p>{ description }</p>

@@ -1,0 +1,21 @@
+---
+const {
+  title,
+  description,
+  image_text = "En savoir plus",
+  image_url = "#",
+  button_text = "En savoir plus",
+  button_url = "#",
+} = Astro.props;
+---
+
+<div class="min-h-96 flex flex-col-reverse lg:flex-row-reverse">
+  	<div class="w-1/2">
+    	<img src={ image_url } class="max-w-sm rounded-lg shadow-2xl" alt={ image_text }/>
+  	</div>
+	<div class="w-1/2">
+      	<h1 class="text-5xl font-bold">{ title }</h1>
+      	<p class="py-6">{ description }</p>
+      	<a class="btn btn-primary" href={ button_url }>{ button_text }</a>
+    </div>
+</div>

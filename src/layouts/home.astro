@@ -1,15 +1,17 @@
 ---
-const { content } = Astro.props;
+const { title } = Astro.props;
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{content.title}</title>
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<title>{ title }</title>
 	</head>
 	<body>
-		<slot />
+		<main class="mx-8 my-4">
+			<slot />
+		</main>
 	</body>
 </html>

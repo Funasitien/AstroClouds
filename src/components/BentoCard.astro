@@ -1,0 +1,10 @@
+---
+const { title = "Titre", description = "Je crois que je suis une description, à vérifier.", button_text = "En savoir plus", button_url = "#", grid = "col-span-2 row-span-2" } = Astro.props;
+---
+
+<div class:list={['card bg-base-300 shadow-xl', grid]}>
+  <div class="card-body">
+    <h2 class="card-title">{ title }</h2>
+    <p>{ description }</p>
+  </div>
+</div>
