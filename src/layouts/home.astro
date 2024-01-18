@@ -1,25 +1,42 @@
 ---
-import '@fontsource/poppins';
-import '@fontsource/poppins/800.css';
+import "@fontsource/poppins";
+import "@fontsource/poppins/800.css";
+import BottomNav from "../components/BottomNavbar.astro";
 
 const { title } = Astro.props;
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/AstroClouds/favicon.png" />
-		<title>{ title }</title>
-	</head>
-	<style>
-		body {
-  			font-family: 'Poppins', sans-serif;
-		}
-	</style>
-	<body>
-		<main class="mx-8 lg:mx-16 my-4">
-			<slot />
-		</main>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="viewport-fit=cover"> 
+    <link rel="icon" type="image/svg+xml" href="/AstroClouds/favicon.png" />
+    <title>{title}</title>
+    <script is:inline>
+      // ☝️ This script prevent the FART effect.
+      if (localStorage.getItem("theme") === null) {
+        document.documentElement.setAttribute("data-theme", "night");
+      } else
+        document.documentElement.setAttribute(
+          "data-theme",
+          localStorage.getItem("theme")
+        );
+    </script>
+    <script>
+      import { themeChange } from "theme-change";
+      themeChange();
+    </script>
+  </head>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+  <body>
+    <main class="mx-8 lg:mx-16 my-4">
+      <slot />
+    </main>
+  </body>
+  <BottomNav />
 </html>

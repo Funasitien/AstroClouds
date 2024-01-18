@@ -10,7 +10,7 @@ import Layout from "../layouts/home.astro";
 
 <Layout title="Funasitien DreamCloud">
   <Bento title="Funasitien DreamCloud" image_url="/AstroClouds/avatar.webp">
-    <BentoCard icon="simple-icons:instagram" title="Instagram" />
+    <BentoCard icon="simple-icons:instagram" title="Instagram" url="https://instagram.com/fdreamcloud" />
     <BentoCard
       icon="simple-icons:github"
       title="GitHub"
@@ -34,15 +34,22 @@ import Layout from "../layouts/home.astro";
     <BentoCard
       title="Moi"
       grid="flex-row col-span-4 row-span-1 row-start-9 lg:row-start-auto"
+      plus="pt-4"
     />
     <BentoCard title="Hétonia" />
     <BentoCard
       title="Moi + mes coupains"
       grid="flex-row col-span-4 row-span-1"
+      plus="pt-4"
     />
   </Bento>
 
-  <HeroLeft title="Funasitien DreamCloud" description="LOOOOOOL" />
+  <select data-choose-theme>
+    <option value="pastel">Default</option>
+    <option value="night">Dark</option>
+  </select>
+
+  <!-- Not Finished Yet !HeroLeft title="Funasitien DreamCloud" description="LOOOOOOL" />
 
   <HeroRight title="Funasitien DreamCloud" description="LOOOOOOL" />
 
@@ -52,5 +59,5 @@ import Layout from "../layouts/home.astro";
     <a href="/markdown-page" class="p-4 underline"
       >Markdown is also supported...</a
     >
-  </div>avatar.webp
+  </div -->
 </Layout>
