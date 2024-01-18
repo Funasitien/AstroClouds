@@ -1,4 +1,6 @@
 ---
+import { Icon } from 'astro-icon/components'
+
 const {
   title,
   description,
@@ -9,17 +11,14 @@ const {
 } = Astro.props;
 ---
 
-<div class="min-h-96 flex flex-col lg:flex-row">
-  <div class="w-1/2">
-    <img
-      src={image_url}
-      class="max-w-sm rounded-lg shadow-2xl"
-      alt={image_text}
-    />
-  </div>
-  <div class="w-1/2 lg:flex lg:flex-col">
-    <h1 class="text-5xl font-bold text-end">{title}</h1>
-    <p class="py-6 text-end">{description}</p>
-    <a class="justify-end btn btn-primary" href={button_url}>{button_text}</a>
-  </div>
+<div class="min-h-96 flex">
+  	<div class="w-1/2">
+    	<img src={ image_url } class="max-w-sm rounded-lg shadow-2xl" alt={ image_text }/>
+  	</div>
+	<div class="w-1/2">
+      	<h1 class="text-5xl font-bold">{ title }</h1>
+      	<p class="py-6">{ description }</p>
+      	<a class="btn btn-primary" href={ button_url }>{ button_text }</a>
+    </div>
 </div>
+

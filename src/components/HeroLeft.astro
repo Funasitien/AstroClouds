@@ -1,4 +1,6 @@
 ---
+import { Icon } from 'astro-icon/components'
+
 const {
   title,
   description,
@@ -6,6 +8,7 @@ const {
   image_url = "#",
   button_text = "En savoir plus",
   button_url = "#",
+  icon = "mingcute:information-fill",
 } = Astro.props;
 ---
 
@@ -14,7 +17,10 @@ const {
     	<img src={ image_url } class="max-w-sm rounded-lg shadow-2xl" alt={ image_text }/>
   	</div>
 	<div class="w-1/2">
-      	<h1 class="text-5xl font-bold">{ title }</h1>
+      	<h1 class="flex text-5xl font-bold">
+          <Icon name={ icon } class="p-1 rounded bg-neutral-content text-neutral mr-2"/>
+           { title }
+        </h1>
       	<p class="py-6">{ description }</p>
       	<a class="btn btn-primary" href={ button_url }>{ button_text }</a>
     </div>

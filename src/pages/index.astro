@@ -1,36 +1,56 @@
 ---
-import Button from '../components/Button.astro';
-import Card from '../components/Card.astro';
-import BentoCard from '../components/BentoCard.astro';
-import HeroLeft from '../components/HeroLeft.astro';
-import HeroRight from '../components/HeroRight.astro';
-import Bento from '../layouts/Bento.astro';
-import Layout from '../layouts/home.astro';
+import Button from "../components/Button.astro";
+import Card from "../components/Card.astro";
+import BentoCard from "../components/BentoCard.astro";
+import HeroLeft from "../components/HeroLeft.astro";
+import HeroRight from "../components/HeroRight.astro";
+import Bento from "../layouts/Bento.astro";
+import Layout from "../layouts/home.astro";
 ---
 
-
 <Layout title="Funasitien DreamCloud">
-	<Bento title="Funasitien DreamCloud" image_url="/avatar.webp">
-		<BentoCard title="Instagram"></BentoCard>
-		<BentoCard title="GitHub" grid="col-span-2 row-span-2 lg:row-span-4"></BentoCard>
-		<BentoCard title="Twitch" grid="col-span-4 row-span-2"></BentoCard>
-		<BentoCard title="DEMOCRAFT"></BentoCard>
-		<BentoCard title="SoundCloud"></BentoCard>
-		<BentoCard title="Youtube" grid="col-span-2 row-span-2 lg:row-span-4"></BentoCard>
-		<BentoCard title="Moi" grid="col-span-4 row-span-1 row-start-9 lg:row-start-auto"></BentoCard>
-		<BentoCard title="Hétonia"></BentoCard>
-		<BentoCard title="Moi + mes coupains" grid="col-span-4 row-span-1"></BentoCard>
-	</Bento>
+  <Bento title="Funasitien DreamCloud" image_url="/AstroClouds/avatar.webp">
+    <BentoCard icon="simple-icons:instagram" title="Instagram" />
+    <BentoCard
+      icon="simple-icons:github"
+      title="GitHub"
+      grid="col-span-2 row-span-2 lg:row-span-4"
+	  url="https://github.com/Funasitien"
+    />
+    <BentoCard
+      icon="simple-icons:twitch"
+      title="Twitch"
+      grid="col-span-4 row-span-2"
+	  url="https://twitch.tv/fdreamcloud"
+    />
+    <BentoCard title="DEMOCRAFT" />
+    <BentoCard icon="simple-icons:soundcloud" title="SoundCloud" url="https://soundcloud.com/bydreamcloud"/>
+    <BentoCard
+      icon="simple-icons:youtube"
+      title="Youtube"
+      grid="col-span-2 row-span-2 lg:row-span-4"
+	  url="https://youtube.com/@funasitien"
+    />
+    <BentoCard
+      title="Moi"
+      grid="flex-row col-span-4 row-span-1 row-start-9 lg:row-start-auto"
+    />
+    <BentoCard title="Hétonia" />
+    <BentoCard
+      title="Moi + mes coupains"
+      grid="flex-row col-span-4 row-span-1"
+    />
+  </Bento>
 
-	<HeroLeft title="Funasitien DreamCloud" description="LOOOOOOL">
-	</HeroLeft>
+  <HeroLeft title="Funasitien DreamCloud" description="LOOOOOOL" />
 
-	<HeroRight title="Funasitien DreamCloud" description="LOOOOOOL">
-	</HeroRight>
+  <HeroRight title="Funasitien DreamCloud" description="LOOOOOOL" />
 
-	<div class="grid place-items-center h-screen content-center">
-		<Button>Tailwind Button in Astro!</Button>
-		<Card title="Test"></Card>
-		<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-	</div>avatar.webp
+  <div class="grid place-items-center h-screen content-center">
+    <Button>Tailwind Button in Astro!</Button>
+    <Card title="Test" />
+    <a href="/markdown-page" class="p-4 underline"
+      >Markdown is also supported...</a
+    >
+  </div>avatar.webp
 </Layout>
