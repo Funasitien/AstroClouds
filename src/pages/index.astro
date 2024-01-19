@@ -10,37 +10,52 @@ import Layout from "../layouts/home.astro";
 
 <Layout title="Funasitien DreamCloud">
   <Bento title="Funasitien DreamCloud" image_url="/AstroClouds/avatar.webp">
-    <BentoCard icon="simple-icons:instagram" title="Instagram" url="https://instagram.com/fdreamcloud" />
+    <BentoCard
+      icon="simple-icons:instagram"
+      title="Instagram"
+      url="https://instagram.com/fdreamcloud"
+    />
     <BentoCard
       icon="simple-icons:github"
       title="GitHub"
       grid="col-span-2 row-span-2 lg:row-span-4"
-	  url="https://github.com/Funasitien"
+      url="https://github.com/Funasitien"
     />
     <BentoCard
       icon="simple-icons:twitch"
       title="Twitch"
       grid="col-span-4 row-span-2"
-	  url="https://twitch.tv/fdreamcloud"
+      url="https://twitch.tv/fdreamcloud"
     />
-    <BentoCard title="DEMOCRAFT" />
-    <BentoCard icon="simple-icons:soundcloud" title="SoundCloud" url="https://soundcloud.com/bydreamcloud"/>
+    <BentoCard title="DEMOCRAFT" description="LE meilleur serveur Mini-Jeux Survie Java & Bedrock sans hésitations" button="Site Web" icon="/AstroClouds/img/democraft.png" />
+    <BentoCard
+      icon="simple-icons:soundcloud"
+      title="SoundCloud"
+      url="https://soundcloud.com/bydreamcloud"
+    />
     <BentoCard
       icon="simple-icons:youtube"
       title="Youtube"
       grid="col-span-2 row-span-2 lg:row-span-4"
-	  url="https://youtube.com/@funasitien"
+      url="https://youtube.com/@funasitien"
     />
     <BentoCard
-      title="Moi"
-      grid="flex-row col-span-4 row-span-1 row-start-9 lg:row-start-auto"
+      title="Les DreamClouds"
+      icon="https://dreamclouds.fr/storage/img/logo-white.png"
+      grid="flex flex-row col-span-4 row-span-1 row-start-9 lg:row-start-auto"
       plus="pt-3.5"
     />
-    <BentoCard title="Hétonia" />
     <BentoCard
-      title="Moi + mes coupains"
-      grid="flex-row col-span-4 row-span-1"
+      title="Hétonia"
+      description="Survie presque moddé et mini-jeux avec un resouce pack du tonnerre"
+      icon="/AstroClouds/img/hetonia.png"
+      button="Site Web"
+    />
+    <BentoCard
+      title="SOON"
+      grid="flex flex-row col-span-4 row-span-1"
       plus="pt-3.5"
+      description="Encore un truc ?"
     />
   </Bento>
 
