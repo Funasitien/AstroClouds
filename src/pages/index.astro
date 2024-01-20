@@ -1,6 +1,6 @@
 ---
 import Button from "../components/Button.astro";
-import Card from "../components/Card.astro";
+import BottomCard from "../components/BottomCard.astro";
 import BentoCard from "../components/BentoCard.astro";
 import HeroLeft from "../components/HeroLeft.astro";
 import HeroRight from "../components/HeroRight.astro";
@@ -71,19 +71,26 @@ import Layout from "../layouts/home.astro";
   <HeroLeft
     title="A propos de moi"
     alt="L'histoire du petit fufu"
-    description="<ma vie>"
+    description="Hey 👋 Moi c'est Funasitien, développeur depuis 2020 d'abord sur scratch, puis sur python, avant de me retrouver ici, à faire du frontend <br>"
     icon="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f"
-    image_url="https://minecraft.wiki/images/thumb/Lectern_with_Book_%28S%29.png/150px-Lectern_with_Book_%28S%29.png?0e413"
+    image_url="https://minecraft.wiki/images/Journal_Icon_Open.png?595b0&20230723002837"
   />
   <HeroRight
     title="Mes supers projets"
     alt="DEMOCRAFT c'est la vie"
     description="<mes projets>"
-    icon="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f"
-    image_url="https://minecraft.wiki/images/thumb/Lectern_with_Book_%28S%29.png/150px-Lectern_with_Book_%28S%29.png?0e413"
+    icon="https://minecraft.wiki/images/Brown_Shulker_Box.png?e7e04"
+    image_url="https://minecraft.wiki/images/Backpack_%28MCE%29.png?4b906&20210918121441"
   />
 
-  <!-- HeroRight title="Funasitien DreamCloud" description="LOOOOOOL" />
+  <BottomCard justify="justify-center text-center" title="Ca te plait ?" description="Mes commissions sont ouvertes à tout !" icon="https://minecraft.wiki/images/thumb/Ruby_icon_%28MCE%29.png/120px-Ruby_icon_%28MCE%29.png?78ba4"/>
+  <!--HeroLeft
+    title="A propos de moi"
+    alt="L'histoire du petit fufu"
+    description="Hey 👋 Moi c'est Funasitien, développeur depuis 2020 d'abord sur scratch, puis sur python, avant de me retrouver ici, à faire du frontend <br>"
+    icon="https://minecraft.wiki/images/Boosts_%28MCE%29.png?bfda5&20210916144002"
+    image_url="https://minecraft.wiki/images/thumb/Ruby_icon_%28MCE%29.png/120px-Ruby_icon_%28MCE%29.png?78ba4"
+  />
 
   <div class="grid place-items-center h-screen content-center">
     <Button>Tailwind Button in Astro!</Button>

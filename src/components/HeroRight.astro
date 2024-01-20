@@ -13,11 +13,11 @@ const {
 } = Astro.props;
 ---
 
-<div class="min-h-96 flex my-2">
-  <div class="w-1/2">
+<div class="min-h-96 flex py-2">
+  <div class="w-1/2 flex justify-center">
     <img
       src={image_url}
-      class="max-w-sm w-full h-auto rounded-lg shadow-2xl"
+      class="flex max-w-sm w-full h-auto rounded-lg justify-center"
       alt={image_text}
     />
   </div>
@@ -31,14 +31,14 @@ const {
         icon.includes("/") && (
           <img
             src={icon}
-            class="h-16 w-auto bg-primary p-1 rounded-lg"
+            class="h-16 w-auto bg-primary justify-center p-1 rounded-lg"
             alt={title}
           />
         )
       }
       {!icon.includes("/") && <Icon name={icon} class="text-6xl" />}
     </div>
-    <p class="py-6 text-end">{description}</p>
+    <p class="py-6 text-end text-lg">{description}</p>
     {
       !button_text.includes("#") && (
         <a class="btn btn-primary " href={button_url}>
