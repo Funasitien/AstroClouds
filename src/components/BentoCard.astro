@@ -35,13 +35,13 @@ if (domain === 'github.com') {
 <div class:list={['card border-2 shadow-xl', customClass, grid]}>
   <div class:list={['card-body pl-6 pr-0', plus]}>
     <h2 class="flex card-title text-lg lg:text-xl">
-      {icon.includes('/') && <img src={icon} class="h-7 w-auto"/>}
+      {icon.includes('/') && <img src={icon} class="h-7 w-auto" alt={title}/>}
       {!icon.includes('/') && <Icon name={icon} />}
       <span>{title}</span>
     </h2>
     <p class="text-sm pr-4">{description}</p>
     {!button.includes('#') && <div class="card-actions justify-end pr-4">
-      <a href= { url } class="btn btn-primary lg:btn-sm">{ button }</a>
+      <a href={ url } target="_blank" class="btn btn-primary lg:btn-sm">{ button }</a>
     </div>}
   </div>
 </div>

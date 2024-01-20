@@ -27,7 +27,13 @@ import Layout from "../layouts/home.astro";
       grid="col-span-4 row-span-2"
       url="https://twitch.tv/fdreamcloud"
     />
-    <BentoCard title="DEMOCRAFT" description="LE meilleur serveur Mini-Jeux Survie Java & Bedrock sans hésitations" button="Site Web" icon="/AstroClouds/img/democraft.png" />
+    <BentoCard
+      title="DEMOCRAFT"
+      description="LE meilleur serveur Mini-Jeux Survie Java & Bedrock sans hésitations"
+      url="https://democraft.fr"
+      button="Site Web"
+      icon="/AstroClouds/img/democraft.png"
+    />
     <BentoCard
       icon="simple-icons:soundcloud"
       title="SoundCloud"
@@ -41,15 +47,18 @@ import Layout from "../layouts/home.astro";
     />
     <BentoCard
       title="Les DreamClouds"
-      icon="https://dreamclouds.fr/storage/img/logo-white.png"
+      icon="/AstroClouds/img/dreamclouds.png"
       grid="flex flex-row col-span-4 row-span-1 row-start-9 lg:row-start-auto"
       plus="pt-3.5"
+      description="Ma super équipe de choc de développeurs"
+      url="https://dreamclouds.fr"
     />
     <BentoCard
       title="Hétonia"
       description="Survie presque moddé et mini-jeux avec un resouce pack du tonnerre"
       icon="/AstroClouds/img/hetonia.png"
       button="Site Web"
+      url="https://hetonia.fr"
     />
     <BentoCard
       title="SOON"
@@ -59,14 +68,22 @@ import Layout from "../layouts/home.astro";
     />
   </Bento>
 
-  <select data-choose-theme>
-    <option value="pastel">Default</option>
-    <option value="night">Dark</option>
-  </select>
+  <HeroLeft
+    title="A propos de moi"
+    alt="L'histoire du petit fufu"
+    description="<ma vie>"
+    icon="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f"
+    image_url="https://minecraft.wiki/images/thumb/Lectern_with_Book_%28S%29.png/150px-Lectern_with_Book_%28S%29.png?0e413"
+  />
+  <HeroRight
+    title="Mes supers projets"
+    alt="DEMOCRAFT c'est la vie"
+    description="<mes projets>"
+    icon="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f"
+    image_url="https://minecraft.wiki/images/thumb/Lectern_with_Book_%28S%29.png/150px-Lectern_with_Book_%28S%29.png?0e413"
+  />
 
-  <!-- Not Finished Yet !HeroLeft title="Funasitien DreamCloud" description="LOOOOOOL" />
-
-  <HeroRight title="Funasitien DreamCloud" description="LOOOOOOL" />
+  <!-- HeroRight title="Funasitien DreamCloud" description="LOOOOOOL" />
 
   <div class="grid place-items-center h-screen content-center">
     <Button>Tailwind Button in Astro!</Button>

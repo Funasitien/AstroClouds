@@ -2,6 +2,7 @@
 import "@fontsource/poppins";
 import "@fontsource/poppins/800.css";
 import BottomNav from "../components/BottomNavbar.astro";
+import Header from "../components/Header.astro";
 
 const { title } = Astro.props;
 ---
@@ -11,6 +12,7 @@ const { title } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/AstroClouds/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="/AstroClouds/font/font.css" />
     <title>{title}</title>
     <script is:inline>
       // ☝️ This script prevent the FART effect.
@@ -34,6 +36,7 @@ const { title } = Astro.props;
     }
   </style>
   <body>
+    <Header />
     <main class="mx-2 lg:mx-16 my-4">
       <slot />
     </main>
