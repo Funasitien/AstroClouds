@@ -4,7 +4,6 @@ import { Icon } from "astro-icon/components";
 const {
   title,
   alt,
-  description,
   image_text = "En savoir plus",
   image_url = "#",
   button_text = "#",
@@ -38,7 +37,9 @@ const {
         <h3 class="magic">{alt}</h3>
       </div>
     </div>
-    <p class="py-6 text-lg" set:html={description} />
+    <p class="py-6 text-lg">
+      <slot/>
+    </p>
     {
       !button_text.includes("#") && (
         <a class="btn btn-primary" href={button_url}>
