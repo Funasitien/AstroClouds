@@ -13,15 +13,15 @@ const {
 } = Astro.props;
 ---
 
-<div class="min-h-96 flex flex-col-reverse lg:flex-row-reverse py-2">
-  <div class="w-1/2 flex justify-center">
+<div class="min-h-96 flex flex-col-reverse lg:flex-row-reverse py-2 ml-4">
+  <div class="lg:w-1/2 flex justify-center">
     <img
       src={image_url}
       class="flex max-w-sm w-full h-auto rounded-lg justify-center"
       alt={image_text}
     />
   </div>
-  <div class="w-1/2">
+  <div class="lg:w-1/2">
     <div class="flex w-full">
       {
         icon.includes("/") && (
@@ -34,7 +34,7 @@ const {
       }
       {!icon.includes("/") && <Icon name={icon} class="text-6xl" />}
       <div class="pl-3">
-        <h1 class="text-4xl font-bold">{title}</h1>
+        <h1 class="text-3xl lg:text-4xl font-bold">{title}</h1>
         <h3 class="magic">{alt}</h3>
       </div>
     </div>

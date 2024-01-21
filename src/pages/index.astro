@@ -6,6 +6,7 @@ import HeroLeft from "../components/HeroLeft.astro";
 import HeroRight from "../components/HeroRight.astro";
 import Bento from "../layouts/Bento.astro";
 import Layout from "../layouts/home.astro";
+import { Icon } from "astro-icon/components";
 ---
 
 <Layout title="Funasitien DreamCloud">
@@ -83,7 +84,17 @@ import Layout from "../layouts/home.astro";
     image_url="https://minecraft.wiki/images/Backpack_%28MCE%29.png?4b906&20210918121441"
   />
 
-  <BottomCard justify="justify-center text-center" title="Ca te plait ?" description="Mes commissions sont ouvertes à tout !" icon="https://minecraft.wiki/images/thumb/Ruby_icon_%28MCE%29.png/120px-Ruby_icon_%28MCE%29.png?78ba4"/>
+  <BottomCard
+    justify="justify-center text-center"
+    title="Ca te plait ?"
+    description="Mes commissions sont ouvertes à tout !"
+    icon="https://minecraft.wiki/images/thumb/Ruby_icon_%28MCE%29.png/120px-Ruby_icon_%28MCE%29.png?78ba4"
+  >
+  <div class="flex flex-col lg:flex-row">
+    <Button color="bg-blue-500 hover:bg-blue-600 ring-blue-500" href="https://paypal.me/funasitien"><Icon class="translate-y-1" name="simple-icons:paypal"/>Faites un don</Button>
+    <Button color="bg-yellow-500 hover:bg-yellow-600 ring-yellow-500" href="https://buymeacoff.ee/funa"><Icon class="translate-y-1" name="simple-icons:buymeacoffee"/>Faites une commission</Button>
+  </div>
+  </BottomCard>
   <!--HeroLeft
     title="A propos de moi"
     alt="L'histoire du petit fufu"
