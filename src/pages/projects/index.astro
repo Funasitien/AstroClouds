@@ -1,0 +1,21 @@
+---
+import Layout from "../../layouts/main.astro";
+const posts = await Astro.glob('./*.md');
+---
+
+<Layout title="Test">
+    <div class="bg-center bg-cover min-h-fit w-full flex justify-center" style="background-image: url(/AstroClouds/img/banner.png);">
+        <img class="py-10 h-52 w-auto" src="/AstroClouds/img/archive_title.png">
+        <div class="min-h-96" style="background-image: linear-gradient(rgba(0, 0, 0, 0), oklch(var(--b1)))">
+            <br>
+        </div>
+
+    </div>
+    {posts.slice(0, 4).map((post) => (
+    <article>
+        <h2>{post.frontmatter.title}</h2>
+        <p>{post.frontmatter.description}</p>
+        <a href={post.url}>Lire plus</a>
+    </article>
+    ))}
+</Layout>
