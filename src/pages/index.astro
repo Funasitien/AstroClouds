@@ -4,6 +4,7 @@ import BottomCard from "../components/BottomCard.astro";
 import BentoCard from "../components/BentoCard.astro";
 import HeroLeft from "../components/HeroLeft.astro";
 import HeroRight from "../components/HeroRight.astro";
+import HeroButton from "../components/HeroButton.astro";
 import Bento from "../layouts/Bento.astro";
 import Layout from "../layouts/home.astro";
 import { Icon } from "astro-icon/components";
@@ -73,6 +74,7 @@ import { Icon } from "astro-icon/components";
     title="A propos de moi"
     alt="L'histoire du petit fufu"
     icon="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f"
+    image_url="AstroClouds/img/full.webp"
   >
     Hey 👋 Moi c'est Funasitien, développeur depuis 2020 d'abord sur scratch, 
     puis sur python, avant de me retrouver ici, à faire du frontend <br>
@@ -83,7 +85,7 @@ import { Icon } from "astro-icon/components";
     alt="DEMOCRAFT c'est la vie"
     icon="https://minecraft.wiki/images/Backpack_%28MCE%29.png?4b906&20210918121441"
   ></HeroRight>
-  <HeroLeft
+  <HeroButton
     title="Un développeur pour de vrais"
     alt="Je vise mais vraiment personne.  Hein ll"
     icon="https://minecraft.wiki/images/Boosts_%28MCE%29.png?bfda5&20210916144002"
@@ -98,7 +100,7 @@ import { Icon } from "astro-icon/components";
       <Icon name="simple-icons:python" class="translate-y-1 ml-2"/> Python,
       <Icon name="simple-icons:flask" class="translate-y-1 ml-2"/> Flask,  
     </p>
-  </HeroLeft>
+  </HeroButton>
 
   <BottomCard
     justify="justify-center text-center"
