@@ -14,20 +14,24 @@ import { Icon } from "astro-icon/components";
   <Bento title="Funasitien DreamCloud" image_url="/AstroClouds/avatar.webp">
     <BentoCard
       icon="simple-icons:instagram"
+      description="Globalement l'endroit où je poste mes dessins/créations atristiques"
       title="Instagram"
       url="https://instagram.com/fdreamcloud"
+      button="@fdreamcloud"
     />
     <BentoCard
       icon="simple-icons:github"
       title="GitHub"
       grid="col-span-2 row-span-2 lg:row-span-4"
       url="https://github.com/Funasitien"
+      button="Funasitien"
     />
     <BentoCard
       icon="simple-icons:twitch"
       title="Twitch"
       grid="col-span-4 row-span-2"
       url="https://twitch.tv/fdreamcloud"
+      button="ttv/fdreamcloud"
     />
     <BentoCard
       title="DEMOCRAFT"
@@ -40,12 +44,14 @@ import { Icon } from "astro-icon/components";
       icon="simple-icons:soundcloud"
       title="SoundCloud"
       url="https://soundcloud.com/bydreamcloud"
+      button="@bydreamcloud"
     />
     <BentoCard
       icon="simple-icons:youtube"
       title="Youtube"
       grid="col-span-2 row-span-2 lg:row-span-4"
       url="https://youtube.com/@funasitien"
+      button="@funasitien"
     />
     <BentoCard
       title="Les DreamClouds"
@@ -74,7 +80,8 @@ import { Icon } from "astro-icon/components";
     title="A propos de moi"
     alt="L'histoire du petit fufu"
     icon="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f"
-    image_url="AstroClouds/img/full.webp"
+    image_url="/AstroClouds/img/full.webp"
+    icon_class="h-96"
   >
     Hey 👋 Moi c'est Funasitien, développeur depuis 2020 d'abord sur scratch, 
     puis sur python, avant de me retrouver ici, à faire du frontend <br>
@@ -84,22 +91,17 @@ import { Icon } from "astro-icon/components";
     title="Mes supers projets"
     alt="DEMOCRAFT c'est la vie"
     icon="https://minecraft.wiki/images/Backpack_%28MCE%29.png?4b906&20210918121441"
-  ></HeroRight>
+    image_url="/AstroClouds/img/old-banner.png"
+    icon_class="rounded-lg"
+  >
+  Du text ici.
+  </HeroRight>
   <HeroButton
-    title="Un développeur pour de vrais"
-    alt="Je vise mais vraiment personne.  Hein ll"
+    title="A la pointe de la tech"
+    alt="Et qui connais la tech Hein lapin"
     icon="https://minecraft.wiki/images/Boosts_%28MCE%29.png?bfda5&20210916144002"
   >
-    <p class="flex flex-wrap text-lg">
-      <Icon name="simple-icons:astro" class="translate-y-1 ml-2"/> Astro, 
-      <Icon name="simple-icons:laravel" class="translate-y-1 ml-2"/> Laravel, 
-      <Icon name="simple-icons:tailwindcss" class="translate-y-1 ml-2"/> TailwindCSS, 
-      <Icon name="simple-icons:bootstrap" class="translate-y-1 ml-2"/> Bootstrap, 
-      <Icon name="simple-icons:html5" class="translate-y-1 ml-2"/><Icon name="simple-icons:css3" class="translate-y-1"/><Icon name="simple-icons:javascript" class="translate-y-1"/> Frontend, 
-      <br>
-      <Icon name="simple-icons:python" class="translate-y-1 ml-2"/> Python,
-      <Icon name="simple-icons:flask" class="translate-y-1 ml-2"/> Flask,  
-    </p>
+  Encore du texte ici.
   </HeroButton>
 
   <BottomCard

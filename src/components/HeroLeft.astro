@@ -9,14 +9,15 @@ const {
   button_text = "#",
   button_url = "#",
   icon = "mingcute:information-fill",
+  icon_class,
 } = Astro.props;
 ---
 
-<div class="min-h-96 flex flex-col-reverse lg:flex-row-reverse py-2 ml-4">
-  <div class="lg:w-1/2 flex justify-center">
+<div class="min-h-96 flex flex-col-reverse lg:flex-row-reverse py-2 lg:py-6 ml-4">
+  <div class="lg:w-1/2 flex justify-center max-h-96">
     <img
       src={image_url}
-      class="flex max-w-sm w-full h-auto rounded-lg justify-center"
+      class:list={['flex w-auto h-fit rounded-lg justify-center', icon_class]}
       alt={image_text}
     />
   </div>
