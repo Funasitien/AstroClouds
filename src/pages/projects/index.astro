@@ -1,21 +1,33 @@
 ---
 import Layout from "../../layouts/main.astro";
-const posts = await Astro.glob('./*.md');
+import Card from "../../components/ProjectCard.astro";
+const posts = await Astro.glob("./*.md");
 ---
 
 <Layout title="Test">
-    <div class="bg-center bg-cover min-h-fit w-full flex justify-center" style="background-image: url(/AstroClouds/img/banner.png);">
-        <img class="py-10 h-52 w-auto" src="/AstroClouds/img/archive_title.png">
-        <div class="min-h-96" style="background-image: linear-gradient(rgba(0, 0, 0, 0), oklch(var(--b1)))">
-            <br>
-        </div>
-
+  <div
+    class="bg-center bg-cover min-h-fit w-full flex justify-center"
+    style="background-image: url(/AstroClouds/img/banner.png);">
+    <img class="py-10 h-52 w-auto" src="/AstroClouds/img/archive_title.png" />
+    <div
+      class="min-h-96"
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0), oklch(var(--b1)))">
+      <br />
     </div>
-    {posts.slice(0, 4).map((post) => (
-    <article>
-        <h2>{post.frontmatter.title}</h2>
-        <p>{post.frontmatter.description}</p>
-        <a href={post.url}>Lire plus</a>
-    </article>
-    ))}
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2">
+    {
+      posts
+        .slice(0, 4)
+        .map((post) => (
+          <Card
+            title={ post.frontmatter.title }
+            description={ post.frontmatter.description }
+            button_url={ post.url }
+            button_text={ post.frontmatter.title }>
+          </Card>
+        ))
+    }
+  </div>
 </Layout>

@@ -1,6 +1,8 @@
 ---
 title: Test
 description: re
+slug: test
+layout: /src/layouts/markdown.astro
 ---
 
-"tfré"zrfez'tf'"t('Z)
+Test Test Test
