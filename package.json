@@ -1,7 +1,7 @@
 {
   "name": "astrocloud",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,7 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^2.0.4",
+    "@astrojs/mdx": "^2.1.1",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/poppins": "^5.0.8",
     "@types/canvas-confetti": "^1.6.3",
@@ -18,7 +18,6 @@
     "astro-icon": "^1.0.2",
     "autoprefixer": "^10.4.15",
     "canvas-confetti": "^1.9.1",
-    "daisyui": "^3.9.2",
     "dotenv": "^16.3.1",
     "postcss": "^8.4.28",
     "tailwindcss": "^3.3.5",
@@ -27,6 +26,7 @@
   "devDependencies": {
     "@iconify-json/mingcute": "^1.1.15",
     "@iconify-json/nonicons": "^1.1.7",
-    "@iconify-json/simple-icons": "^1.1.88"
+    "@iconify-json/simple-icons": "^1.1.88",
+    "daisyui": "^4.7.2"
   }
 }

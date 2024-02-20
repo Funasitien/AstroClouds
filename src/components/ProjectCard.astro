@@ -5,20 +5,11 @@ const { title, description, button_text = "#", button_url = "#", base, justify, 
 ---
 
 <div class:list={['card bg-base-300 shadow-xl lg:card-side', base]}>
+  <figure>
+    <img class="m-4 rounded h-52 w-52 lg:m-0 lg:rounded-none" src={icon} alt={title}/>
+  </figure>
   <div class="card-body">
-    <div class:list={['flex w-full', justify]}>
-      {
-        icon.includes("/") && (
-          <img
-            src={icon}
-            class="h-14 w-auto rounded-lg -translate-y-1"
-            alt={title}
-          />
-        )
-      }
-      {!icon.includes("/") && <Icon name={icon} class="text-5xl" />}
-        <h1 class="text-5xl font-bold pl-2">{title}</h1>
-    </div>
+    <h1 class="text-5xl font-bold pl-2">{title}</h1>
     <p class={ justify }>{ description }</p>
     {
       !button_text.includes("#") && (

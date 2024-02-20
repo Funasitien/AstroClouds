@@ -1,0 +1,15 @@
+---
+title: Test
+description: re
+slug: test
+icon: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAUVBMVEX///+EhIR2dnZBQUGXl5dVVVVeXl6op6c+Pj6Hh4eNjY1MTEz39/dHR0daWlp6eno2NjZkZGRqamqxsbHY2Nign58xMTFvb2/f398sLCy+vb2ta6hbAAACOklEQVRoge2Y65KiMBBGJXINhgAKUd//QSf9NZIUwgBTzO7OTk75w0rpCYROupvTKRAIBAKBQGDKZZZj3NekmiG5HiMvkxnKID9afruPZGljST3wQLubY5/7kqgR0RGyGIk0UT36F/W+uLxUbgF0TBSRQ1h0mp9fqC/LS/Gj5KekHFmUj6jN2ueVgESTRUSSwAwxvkrIG8yMm6sy4rlBruk/CjNkLMREHQQ8hSF5i6hsQW3pzQZ5hIvJnOtNLj15AzktfC4Okcf/qFzbTVmqqVxP5aKt6CBoxjWvP1/zp6BtHdNmjwuKCt7tQ6BwQPL+x3TGIvjMwXmAgXYpZnD8lTEu0YtqX+4Nc5yynAdquzh99o3yOsin8nxdLp1FYp5uenAVPODJ8dXskxdB/mfkRWz1vPNlhqPAk0sH8pFoqexoDHb+ujzBDw0bdTSBb6WkuqXlNIWroDMsTbbI8ae3sPblCXIQywGXSv+rXFFqNjibV+VVSz8b1pzlvc0YjyX5DSlf4/l7RaEfIhSnUnL6AbhPgyqjudLMnxelERZHOArv4HKjQw5lUBptT9ALcj0v35n9/4Z8YVl2lRZKaYfsPLm79BYNBzcd1AE82g3y+922LDdX5KoGQcMxxzZceep6jxK9y32DHFwUAuBMn1RPdssgH+vzfG/xr8bKfl2+u7P4ufLSPa53uZ4+0J09kffuI6td9zPcjKXODnk9ktXnGRbP1l8j7/MZFgvxfTyNmMFsaTsDgUAgEFjjA1oTStl0FBLdAAAAAElFTkSuQmCC
+layout: /src/layouts/archive.astro
+---
+
+import { ArchiveCard } from '../../components/ArchiveCard.astro'
+
+```js
+const { title, description, image, base = "col-span-1"} = Astro.props;
+```
+
+<ArchiveCard />
